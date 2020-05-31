@@ -9,6 +9,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" >
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
     
   </head>
 
@@ -204,7 +205,7 @@
 
                 <div class="form-group">
                   <label>Page Body</label>
-                  <textarea name="text" class="form-control" placeholder="Page Body"></textarea>
+                  <textarea name="page-body-text" class="form-control" placeholder="Page Body"></textarea>
                 </div>
 
                 <div class="checkbox">
@@ -243,5 +244,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/JavaScript">
+      CKEDITOR.replace( 'page-body-text' );
+    </script>
   </body>
 </html>
